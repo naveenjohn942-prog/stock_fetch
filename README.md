@@ -25,6 +25,6 @@
    ```
    This command will fetch and download historical data for the symbols listed in `symbols.csv` and save it to `stock_data.csv` in the same directory.
 
-## Notes
+## PS
 - For large datasets or frequent requests, the API rate limits of Kite Connect may become a problem.
 
