@@ -9,6 +9,7 @@
 
 2. **Set Up Environment**:
    - Edit the `.env` file in the project with your Kite Connect API credentials:
+
      ```
      API_KEY=your_api_key
      API_SECRET=your_api_secret
