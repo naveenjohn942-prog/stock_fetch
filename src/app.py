@@ -1,5 +1,5 @@
 import scrape
 
 fetcher = StockFetcher()
-fetcher.fetch_all_data("symbols.csv")
+fetcher.fetch_all_data("test.csv")
 
