@@ -28,6 +28,7 @@ class StockFetcher:
 
     def _generate_access_token(self):
         try:
+            # Generate session to get the access token
             data = self.kite.generate_session(self.request_token, api_secret=self.api_secret)
             return data["access_token"]
         except Exception as e:
@@ -80,3 +81,13 @@ class StockFetcher:
         except Exception as e:
             logger.error(f"Error processing symbols file: {e}")
             raise
+
+if __name__ == "__main__":
+    stock_fetcher = StockFetcher(
+        api_key="your_api_key",
+        api_secret="your_api_secret",
+        request_token="your_request_token",
+        interval="day",
+        from_date="2023-01-01"
+    )
+    stock_fetcher.fetch_all_data("symbols.csv", "historical_stock_data.csv")
