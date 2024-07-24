@@ -22,6 +22,7 @@
 
 4. **Generate Request Token**
    - Run `generate_token.py` and login on the link generated in the terminal output. Copy the `request_token=` in the URL after you log in.
+     
      ```sh
      python generate_token.py
      ```
