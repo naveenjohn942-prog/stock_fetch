@@ -8,7 +8,7 @@
    ```
 
 2. **Set Up Environment**:
-   - Edit the `.env` file in the project with your Kite Connect API credentials and initial from date:
+   Edit the `.env` file in the project with your Kite Connect API credentials and initial from date:
 
      ```dotenv
      API_KEY=your_api_key
@@ -18,10 +18,10 @@
      ```
 
 3. **Symbols File**:
-   - The `symbols.csv` file contains a list of stock symbol names whose data you want to fetch. Ensure each symbol is listed in a separate line under the column `symbol`.
+   The `symbols.csv` file contains a list of stock symbol names whose data you want to fetch. Ensure each symbol is listed in a separate line under the column `symbol`.
 
 4. **Generate Request Token**
-   - Run `generate_token.py` and login on the link generated in the terminal output. Copy the `request_token=` in the URL after you log in.
+   Run `generate_token.py` and login on the link generated in the terminal output. Copy the `request_token=` in the URL after you log in.
      
      ```sh
      python generate_token.py
