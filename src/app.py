@@ -2,4 +2,4 @@
 import scrape
 
 stock_fetcher = StockFetcher()
-stock_fetcher.fetch_all_data("test.csv", "historical_stock_data.csv")
+stock_fetcher.fetch_all_data(r"\symbol_list\test.csv")
