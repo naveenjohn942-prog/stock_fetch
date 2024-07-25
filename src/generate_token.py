@@ -1,5 +1,8 @@
 from kiteconnect import KiteConnect
+from dotenv import load_dotenv
+import os
 
-kite = KiteConnect(api_key=api_key)
+load_dotenv()
+kite = KiteConnect(api_key=os.getenv('API_KEY'))
 url = kite.login_url()
 
